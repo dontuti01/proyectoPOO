@@ -6,15 +6,11 @@ package reservaciones;
 
 /**
  *
- * @author LENOVO
+ * @author Gamer
  */
-public class hospedaje extends servicio{
-    protected String fechaEntr;
-    protected String fechaSal;
-    
-    @Override
-    public String toString(){
-        String a="si";
-        return a;
-    }
+public class Habitacion {
+    public double precio;
+    public TipoHabitacion tipo;
+    public short capacidad, num_hab;
+    public EstadoHabitacion estado;
 }

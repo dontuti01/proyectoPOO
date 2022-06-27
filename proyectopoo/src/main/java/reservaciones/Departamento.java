@@ -6,15 +6,9 @@ package reservaciones;
 
 /**
  *
- * @author LENOVO
+ * @author Gamer
  */
-public class hospedaje extends servicio{
-    protected String fechaEntr;
-    protected String fechaSal;
-    
-    @Override
-    public String toString(){
-        String a="si";
-        return a;
-    }
+public class Departamento extends hospedaje{
+    public int num_hab;
+    public boolean wifi, piscina;
 }
