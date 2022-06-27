@@ -8,7 +8,10 @@ package reservaciones;
  *
  * @author LENOVO
  */
-public class transporte extends servicio{
-    private String fechaEnt;
-    private String fechaSal;
+public class vehiculo extends transporte{
+    private int id;
+    private String marca,modelo,placa,color,capacidad;
+    private boolean estado;
+    private double costo;
+    private tipoTransmision tipo;
 }
