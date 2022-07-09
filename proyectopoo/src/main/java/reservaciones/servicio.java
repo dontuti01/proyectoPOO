@@ -9,15 +9,12 @@ import java.util.Scanner;
  * @author LENOVO
  */
 public class servicio {
-    protected int id_serv;
-    protected String ciudad;
-    protected double valor;
-    protected double puntuacion;
+    private int id_serv;
+    private String ciudad;
+    private double valor;
+    protected int puntuacion;
     Scanner sc = new Scanner(System.in);
-    public servicio(int id_serv,String ciudad,double valor,double puntuacion){
-        this.id_serv=id_serv;
-        this.ciudad=ciudad;
-        this.valor=valor;
+    public servicio(int puntuacion){
         this.puntuacion=puntuacion;
     }
     
@@ -25,12 +22,5 @@ public class servicio {
         System.out.println("/**********MENU**********/\n/*                      */\n/************************/");
         System.out.print("1 Reservar hospedaje\n2. Reservar transporte\n3. Reservar entretenimiento\n4. Consultar reservas\n5. Salir");
     }
-        }
-    public void pagarReserva(servicio serv){
-        
-    }
-    public String toString(){
-        return "";
-    }
-    
+
 }

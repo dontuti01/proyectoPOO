@@ -11,13 +11,13 @@ package Users;
 public class Cliente extends Usuario {
     private int edad;
     private String num_tarjeta;
-    private Cliente tipo;
 
-    public Cliente(int edad, String num_tarjeta, Cliente tipo, int Cedula, String Nombres, String Apellidos, String Usuario, int celular) {
-        super(Cedula, Nombres, Apellidos, Usuario, celular);
-        this.edad = edad;
-        this.num_tarjeta = num_tarjeta;
-        this.tipo = tipo;
+    public Cliente(String cedula, String nombre, String apellido, String usuario, String contrasenia,String celular,String tipo) {
+        super(cedula, nombre, apellido, usuario, contrasenia, celular,tipo);
     }
-    
+    public Cliente(String cedula, String nombre, String apellido, String usuario, String contrasenia,String celular,String tipo,int edad,String num_tarjeta) {
+        super(cedula, nombre, apellido, usuario, contrasenia, celular,tipo);
+        this.edad=edad;
+        this.num_tarjeta=num_tarjeta;
+    }
 }

@@ -11,4 +11,14 @@ package reservaciones;
 public class transporte extends servicio{
     private String fechaEnt;
     private String fechaSal;
+    public transporte(int puntuacion){
+        super(puntuacion);
+    }
+    public void reservar(){
+        System.out.print("Ingrese fecha de inicio de Reserva (formato dd/mm/yy): ");
+        String fechaEnt = sc.nextLine();
+        System.out.print("Ingrese fecha de finalizacion de Reserva (formato dd/mm/yy): ");
+        String fechaSal = sc.nextLine();
+        
+    }
 }

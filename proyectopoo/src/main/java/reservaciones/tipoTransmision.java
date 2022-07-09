@@ -9,5 +9,5 @@ package reservaciones;
  * @author LENOVO
  */
 public enum tipoTransmision {
-    automatico,manual;
+    AUTOMATICO,MANUAL;
 }

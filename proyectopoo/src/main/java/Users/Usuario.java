@@ -9,58 +9,73 @@ package Users;
  * @author ricar
  */
 public class Usuario {
-    private int Cedula;
-    private String Nombres;
-    private String Apellidos;
-    private String Usuario;
-    private int celular;
+    protected String cedula,nombre,apellido,usuario,contrasenia,celular,tipo;
 
-    public Usuario(int Cedula, String Nombres, String Apellidos, String Usuario, int celular) {
-        this.Cedula = Cedula;
-        this.Nombres = Nombres;
-        this.Apellidos = Apellidos;
-        this.Usuario = Usuario;
+    public Usuario(String cedula, String nombre, String apellido, String usuario, String contrasenia,String celular,String tipo) {
+        this.cedula = cedula;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.usuario = usuario;
+        this.contrasenia=contrasenia;
         this.celular = celular;
+        this.tipo=tipo;
     }
 
-    public int getCedula() {
-        return Cedula;
+
+    public String getCedula() {
+        return cedula;
     }
 
-    public void setCedula(int Cedula) {
-        this.Cedula = Cedula;
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
     }
 
-    public String getNombres() {
-        return Nombres;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setNombres(String Nombres) {
-        this.Nombres = Nombres;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getApellidos() {
-        return Apellidos;
+    public String getApellido() {
+        return apellido;
     }
 
-    public void setApellidos(String Apellidos) {
-        this.Apellidos = Apellidos;
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 
     public String getUsuario() {
-        return Usuario;
+        return usuario;
     }
 
-    public void setUsuario(String Usuario) {
-        this.Usuario = Usuario;
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
     }
 
-    public int getCelular() {
+    public String getCelular() {
         return celular;
     }
 
-    public void setCelular(int celular) {
+    public void setCelular(String celular) {
         this.celular = celular;
+    }
+
+    public String getContrasenia() {
+        return contrasenia;
+    }
+
+    public void setContrasenia(String contrasenia) {
+        this.contrasenia = contrasenia;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
     
     

@@ -3,19 +3,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package reservaciones;
-import java.util.Scanner;
+
 /**
  *
  * @author LENOVO
  */
 public class hospedaje extends servicio{
-    protected String fechaEntr;
-    protected String fechaSal;
-    Scanner sc = new Scanner(System.in);
-    @Override
-    public String toString(){
-        String a="si";
-        return a;
+    private String fechaEntr;
+    private String fechaSal;
+    public hospedaje(int puntuacion){
+        super(puntuacion);
     }
     public void reservar(){
         System.out.println("/**********RESERVACION**********/\n/*                              /\n/*******************************/");
