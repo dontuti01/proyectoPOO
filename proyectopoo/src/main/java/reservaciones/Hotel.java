@@ -4,22 +4,42 @@
  */
 package reservaciones;
 
+import Users.Usuario;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.nio.charset.StandardCharsets;
+
 /**
  *
  * @author Gamer
  */
 public class Hotel extends hospedaje{
-    protected int id;
+    protected int id,estrellas;
     protected String nombre, direccion;
     protected boolean desayuno, parqueo, cancelacion;
-    public Hotel(int puntuacion,int id, String nombre,String direccion,boolean desayuno,boolean parqueo,boolean cancelacion){
-        super(puntuacion);
+    public Hotel(int id, String nombre,int estrellas,String direccion,boolean desayuno,boolean parqueo,boolean cancelacion){
+        this.estrellas=estrellas;
         this.id=id;
         this.nombre=nombre;
         this.direccion=direccion;
         this.desayuno=desayuno;
         this.parqueo=parqueo;
         this.cancelacion=cancelacion;
+    }
+    public Hotel(int id){
+        this.id=id;
+    }
+    public Hotel(){
+        
+    }
+
+    public int getEstrellas() {
+        return estrellas;
+    }
+
+    public void setEstrellas(int estrellas) {
+        this.estrellas = estrellas;
     }
 
     public int getId() {
@@ -78,4 +98,10 @@ public class Hotel extends hospedaje{
         this.puntuacion = puntuacion;
     }
     
+    
+    @Override
+    public void reservar(){
+        System.out.println("Estos son los hoteles disponibles: ");
+        
+    }
 }
