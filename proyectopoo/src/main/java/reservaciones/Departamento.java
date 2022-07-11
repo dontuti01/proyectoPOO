@@ -9,6 +9,9 @@ package reservaciones;
  * @author Gamer
  */
 public class Departamento extends hospedaje{
-    public int num_hab;
-    public boolean wifi, piscina;
+    private int num_hab;
+    private boolean wifi, piscina;
+    public Departamento(int num_hab, boolean wifi, boolean piscina){
+        
+    }
 }

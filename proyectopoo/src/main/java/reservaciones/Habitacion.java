@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package reservaciones;
 
 /**
@@ -9,7 +5,7 @@ package reservaciones;
  * @author Gamer
  */
 public class Habitacion extends Hotel{
-    public double precio,capacidad, num_hab;
+    public double precio, capacidad, num_hab;
     public TipoHabitacion tipo;
     public EstadoHabitacion estado;
     public Habitacion(int id,TipoHabitacion tipo,double precio, int capacidad, int num_hab, EstadoHabitacion estado) {
@@ -19,6 +15,9 @@ public class Habitacion extends Hotel{
         this.capacidad = capacidad;
         this.num_hab = num_hab;
         this.estado = estado;
+    }
+    public Habitacion(){
+        
     }
 
     public double getPrecio() {
@@ -79,5 +78,5 @@ public class Habitacion extends Hotel{
         }
         return this.estado == other.estado;
     }
-    
+
 }

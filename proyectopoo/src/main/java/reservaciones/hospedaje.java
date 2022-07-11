@@ -22,7 +22,7 @@ public class hospedaje extends servicio{
     }
     @Override
     public void reservar(){
-        System.out.println("/**********RESERVACION**********/\n/*                              /\n/*******************************/");
+        System.out.println("/****RESERVACION****/\n/*                              /\n/***********/");
     
         System.out.print("Ingrese fecha de entrada (formato dd/mm/yy): ");
         String fechaE = sc.nextLine();

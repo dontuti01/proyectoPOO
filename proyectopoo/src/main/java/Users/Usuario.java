@@ -4,6 +4,13 @@
  */
 package Users;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.Scanner;
+
 /**
  *
  * @author ricar
@@ -20,7 +27,9 @@ public class Usuario {
         this.celular = celular;
         this.tipo=tipo;
     }
-
+    public Usuario(){
+    
+    }
 
     public String getCedula() {
         return cedula;
@@ -77,6 +86,7 @@ public class Usuario {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-    
+     
+
     
 }

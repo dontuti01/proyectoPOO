@@ -4,6 +4,11 @@
  */
 package Users;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
 /**
  *
  * @author ricar
@@ -20,4 +25,6 @@ public class Cliente extends Usuario {
         this.edad=edad;
         this.num_tarjeta=num_tarjeta;
     }
+    
+     
 }

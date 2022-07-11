@@ -14,7 +14,7 @@ public class vehiculo extends transporte{
     private boolean estado;
     private double costo;
     private tipoTransmision tipo;
-    public vehiculo(int id_serv,String ciudad,double valor,double puntuacion,int id,String marca,String modelo,String placa,String color, int capacidad,boolean estado,double costo,tipoTransmision tipo){
-        super(id_serv,ciudad,valor,puntuacion);
+    public vehiculo(){
+      
     }
 }

@@ -4,6 +4,8 @@
  */
 package reservaciones;
 
+import java.util.Scanner;
+
 /**
  *
  * @author LENOVO
@@ -11,8 +13,9 @@ package reservaciones;
 public class transporte extends servicio{
     private String fechaEnt;
     private String fechaSal;
-    public transporte(int puntuacion){
-        super(puntuacion);
+    Scanner sc;
+    public transporte(){
+        sc=new Scanner(System.in);
     }
     public void reservar(){
         System.out.print("Ingrese fecha de inicio de Reserva (formato dd/mm/yy): ");

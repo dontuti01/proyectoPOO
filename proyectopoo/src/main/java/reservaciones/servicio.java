@@ -21,7 +21,8 @@ public class servicio {
     }
     public void reservar(){
         System.out.println("/**********MENU**********/\n/*                      */\n/************************/");
-        System.out.print("1 Reservar hospedaje\n2. Reservar transporte\n3. Reservar entretenimiento\n4. Consultar reservas\n5. Salir");
+        System.out.print("1. Reservar hospedaje\n2. Reservar transporte\n3. Reservar entretenimiento\n4. Consultar reservas\n5. Salir");
+        
     }
 
 }
