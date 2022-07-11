@@ -9,5 +9,5 @@ package reservaciones;
  * @author Gamer
  */
 public enum EstadoHabitacion {
-    DISPONIBLE, OCUPADA
+    DISPONIBLE, OCUPADO
 }
