@@ -4,6 +4,13 @@
  */
 package Users;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.Scanner;
+
 /**
  *
  * @author ricar
@@ -77,6 +84,48 @@ public class Usuario {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+     public void Acceder(){
+        System.out.println("BIenvenido al sistema");
+        Scanner sc =  new Scanner(System.in);
+        String nick =  sc.nextLine();
+        String pass =  sc.nextLine();
+        System.out.println("Ingresar usuario: " + nick);
+        System.out.println("Ingrese contrasena: " + pass );
+        
+        ArrayList<String> lineas =  new ArrayList<>();
+        File archivo =  null;
+        FileReader fr = null;
+        BufferedReader br =  null;
+        
+        try{
+        archivo = new File("usuarios.txt");
+        fr = new FileReader(archivo, StandardCharsets.UTF_8);
+        br = new BufferedReader(fr);
+        
+        String linea;
+        while((linea = br.readLine()) != null){
+            lineas.add(linea);
+        }
+        }catch (Exception e){
+            e.printStackTrace();
+        } finally{
+            try{
+                if(null != fr){
+                    fr.close();
+                }
+                } catch (Exception e2){
+                        e2.printStackTrace();
+                }
+            } 
+     }
+    }
     
+    public void ConsultarReservas(){
+        for (int i: ListaReservas){
+            System.out.println(i);
+        }
+    }
+}
+
     
 }
